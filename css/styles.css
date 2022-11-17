@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #1b1c1e;
 }
 
 h1 {
@@ -57,6 +57,8 @@ body {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 header txt {
@@ -67,7 +69,10 @@ header .img {
   width: 65%;
 }
 
-
+.cv{
+  width:21px;
+  height: 19.3px;
+}
 
 
 @media (max-width: 767px) {
