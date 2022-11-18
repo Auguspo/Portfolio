@@ -13,7 +13,8 @@ h2 {
   font-size: 45px;
   font-weight: 300;
   color: #fad505;
- text-align: center;
+  text-align: center;
+  margin: 2vh 0 2vh 0;
 }
 h3 {
   font-family: Montserrat, sans-serif;
@@ -31,13 +32,26 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-p {
+p,
+li {
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #ffffff;
+  text-align: justify;
 }
 
+li {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  }
+
+  ul{
+    padding-left: 5vw;
+  }
 body {
   font-family: Montserrat, sans-serif;
   font-size: 18px;
@@ -48,17 +62,16 @@ body {
   justify-content: right;
 }
 
+.width {
+  width: 100%;
+  max-width: 1140px;
+  /* convertir a vw */
 
-.width{
-    width: 100%;
-    max-width: 1140px;
-    /* convertir a vw */
-
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
 }
 
 header txt {
@@ -69,13 +82,54 @@ header .img {
   width: 65%;
 }
 
-.cv{
-  width:21px;
+.cv {
+  width: 21px;
   height: 19.3px;
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 575.98px) {
+  .img {
+    display: none;
+  }
+  .width {
+    justify-content: center;
+    /* margin: 0 2vw 0 2vw ; */
+  }
+  .card {
+    margin: 1vh auto 1vh auto;
+  }
+
+  li {
+    margin: auto;
+    width: 80%;
+  }
+
+  ul{padding-left:0;}
+  p{width:90%;}
+
+}
+
+
+@media (max-width: 767.98px) {
+  .img {
+    display: none;
+  }
+  .width {
+    justify-content: center;
+    /* margin: 0 2vw 0 2vw ; */
+  }
+  .card {
+    margin: 1vh auto 1vh auto;
+  }
+
+  li {
+    margin: auto;
+    width: 80%;
+  }
+
+  ul{padding-left:0;}
+  p{width:90%;}
   h1 {
     font-size: 40px !important;
   }
@@ -88,7 +142,41 @@ header .img {
   h6 {
     font-size: 18px !important;
   }
-  p {
+  p,
+  li {
     font-size: 16px !important;
   }
+
+}
+
+
+@media (max-width: 991.98px) {
+  .img {
+    display: none;
+  }
+  .width {
+    justify-content: center;
+    /* margin: 0 2vw 0 2vw ; */
+  }
+  .card {
+    margin: 1vh auto 1vh auto;
+  }
+
+  li {
+    margin: auto;
+    width: 80%;
+  }
+
+  ul{padding-left:0;}
+  p{width:90%;}
+  
+}
+
+@media (max-width: 1199.98px) {
+  
+}
+
+
+@media (max-width: 1399.98px) {
+ 
 }
