@@ -47,20 +47,17 @@ li {
   margin-right: 20%;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  }
+}
 
-  ul{
-    padding-left: 5vw;
-  }
+ul {
+  padding-left: 5vw;
+}
 body {
   font-family: Montserrat, sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
 
-.navbar {
-  justify-content: right;
-}
 
 .width {
   width: 100%;
@@ -74,7 +71,7 @@ body {
   margin-bottom: 2.5vh;
 }
 
-header txt {
+header .txt {
   width: 35%;
 }
 
@@ -82,14 +79,31 @@ header .img {
   width: 65%;
 }
 
-.cv {
-  width: 21px;
-  height: 19.3px;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
 }
 
+.my-float {
+  margin-top: 6px;
+}
+
+.navbar img{
+  width:3%;
+  margin-right: 0.5rem;
+}
 
 @media (max-width: 575.98px) {
-  .img {
+  .img,
+  .float {
     display: none;
   }
   .width {
@@ -105,14 +119,20 @@ header .img {
     width: 80%;
   }
 
-  ul{padding-left:0;}
-  p{width:90%;}
-
+  ul {
+    padding-left: 0;
+  }
+  p {
+    width: 90%;
+  }
+  .navbar img{
+    width:10vw;
+  }
 }
 
-
 @media (max-width: 767.98px) {
-  .img {
+  .img,
+  .float {
     display: none;
   }
   .width {
@@ -128,8 +148,12 @@ header .img {
     width: 80%;
   }
 
-  ul{padding-left:0;}
-  p{width:90%;}
+  ul {
+    padding-left: 0;
+  }
+  p {
+    width: 90%;
+  }
   h1 {
     font-size: 40px !important;
   }
@@ -146,12 +170,14 @@ header .img {
   li {
     font-size: 16px !important;
   }
-
+  .navbar img{
+    width:10vw;
+  }
 }
 
-
 @media (max-width: 991.98px) {
-  .img {
+  .img,
+  .float {
     display: none;
   }
   .width {
@@ -167,16 +193,13 @@ header .img {
     width: 80%;
   }
 
-  ul{padding-left:0;}
-  p{width:90%;}
-  
-}
-
-@media (max-width: 1199.98px) {
-  
-}
-
-
-@media (max-width: 1399.98px) {
- 
+  ul {
+    padding-left: 0;
+  }
+  p {
+    width: 90%;
+  }
+  .navbar img{
+    width:10vw;
+  }
 }
