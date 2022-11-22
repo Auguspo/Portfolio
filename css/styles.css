@@ -7,6 +7,7 @@ h1 {
   font-size: 90px;
   font-weight: 700;
   color: #fad505;
+  text-align: center;
 }
 h2 {
   font-family: Montserrat, sans-serif;
@@ -14,12 +15,13 @@ h2 {
   font-weight: 300;
   color: #fad505;
   text-align: center;
-  margin: 2vh 0 2vh 0;
+  margin: 2vh 0 4vh 0;
 }
 h3 {
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-weight: 300;
+  
 }
 h4 {
   font-family: Montserrat, sans-serif;
@@ -58,7 +60,6 @@ body {
   font-weight: 300;
 }
 
-
 .width {
   width: 100%;
   max-width: 1140px;
@@ -67,16 +68,12 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.5vh;
-  margin-bottom: 2.5vh;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
 }
 
-header .txt {
-  width: 35%;
-}
-
-header .img {
-  width: 65%;
+header {
+  height: 80vh;
 }
 
 .float {
@@ -96,9 +93,23 @@ header .img {
   margin-top: 6px;
 }
 
-.navbar img{
-  width:3%;
+.navbar img {
+  width: 3%;
   margin-right: 0.5rem;
+}
+.foto{
+  border-radius: 100%;
+}
+
+.txt p{
+  margin-bottom: 5vh;
+}
+
+iframe{
+  width: 27.5vw;
+  height: 50vh;
+ margin-top: 20%;
+ border-radius: 2%;
 }
 
 @media (max-width: 575.98px) {
@@ -125,8 +136,8 @@ header .img {
   p {
     width: 90%;
   }
-  .navbar img{
-    width:10vw;
+  .navbar img {
+    width: 10vw;
   }
 }
 
@@ -170,8 +181,8 @@ header .img {
   li {
     font-size: 16px !important;
   }
-  .navbar img{
-    width:10vw;
+  .navbar img {
+    width: 10vw;
   }
 }
 
@@ -199,7 +210,7 @@ header .img {
   p {
     width: 90%;
   }
-  .navbar img{
-    width:10vw;
+  .navbar img {
+    width: 10vw;
   }
 }
