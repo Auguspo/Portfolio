@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Augusto Poletti</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/img/icon.png"
+    />
+  </head>
+  <body>
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="h-auto" src="./assets/img/icon.png" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link active" href="/index.html#grid"
+            >Projects</a
+          >
+          <a class="nav-item nav-link active" href="/index.html#about"
+            >About me</a
+          >
+          <a class="nav-item nav-link" href="/contact.html">Contact me</a>
+        </div>
+      </div>
+    </nav>
+    <!--navbar -->
+    <!-- Form -->
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12">
+            <div class="wrapper">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <div class="contact-wrap">
+                    <h3 class="mb-4 text-center">Get in touch with us</h3>
+                    <div
+                      id="form-message-warning"
+                      class="mb-4 w-100 text-center"
+                    ></div>
+                    <div
+                      id="form-message-success"
+                      class="mb-4 w-100 text-center"
+                    >
+                      Your message was sent, thank you!
+                    </div>
+                    <form
+                      method="POST"
+                      id="contactForm"
+                      name="contactForm"
+                      class="contactForm"
+                    >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="8"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary"
+                            />
+                            <div class="submitting"></div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27158.732942625214!2d-62.276341254391546!3d-38.71589358656158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcabdc1302bd%3A0x76d1d88d241e7a11!2sBah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1669158957079!5m2!1ses-419!2sar"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+
+    <!-- footer -->
+    <footer class="text-center text-white" style="background-color: #2b2b2b">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn-link btn-floating btn-lg text-light m-2"
+            target="_blank"
+            href="https://www.facebook.com/augus2poletti"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn-link btn-floating btn-lg text-light m-2"
+            target="_blank"
+            href="https://www.instagram.com/auguspoletti/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn-link btn-floating btn-lg text-light m-2"
+            target="_blank"
+            href="https://www.linkedin.com/in/augusto-poletti/overlay/background-image/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn-floating btn-lg text-light m-2"
+            target="_blank"
+            href="https://github.com/Auguspo"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center text-light p-3" style="background-color: #2b2b2b">
+        © 2022 Copyright:
+        <a class="text-light" href="https://mdbootstrap.com/"
+          >Augusto Poletti</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- footer -->
+  </body>
+</html>
