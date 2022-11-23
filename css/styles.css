@@ -73,7 +73,8 @@ body {
 }
 
 header {
-  height: 80vh;
+  height: 80%;
+  
 }
 
 .float {
@@ -103,6 +104,10 @@ header {
 
 .txt p{
   margin-bottom: 5vh;
+}
+.txt img{
+  width:auto;
+  height: auto;
 }
 
 iframe{
