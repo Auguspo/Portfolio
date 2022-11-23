@@ -21,7 +21,6 @@ h3 {
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-weight: 300;
-  
 }
 h4 {
   font-family: Montserrat, sans-serif;
@@ -63,18 +62,16 @@ body {
 .width {
   width: 100%;
   max-width: 1140px;
-  /* convertir a vw */
-
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8vh;
-  margin-bottom: 5vh;
+
 }
 
 header {
-  height: 80%;
-  
+  height: 100%;
+  margin-bottom: 10%;
 }
 
 .float {
@@ -98,36 +95,64 @@ header {
   width: 3%;
   margin-right: 0.5rem;
 }
-.foto{
+.foto {
   border-radius: 100%;
-}
-
-.txt p{
-  margin-bottom: 5vh;
-}
-.txt img{
-  width:auto;
+  display: block;
+  margin-top: 5vh;
+  width: auto;
   height: auto;
 }
 
-iframe{
-  width: 27.5vw;
-  height: 50vh;
- margin-top: 20%;
- border-radius: 2%;
+.txt p {
+  margin-bottom: 5vh;
+  margin: auto;
 }
 
+.card {
+  justify-content: center;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 475px;
+  height: 480px;
+  margin-top: 18%;
+  border-radius: 2%;
+}
+
+.divider {
+  background-color: #303030;
+  margin-top: 1vh;
+}
+
+.row p,ul{
+  margin-bottom: 5vh;
+}
 @media (max-width: 575.98px) {
-  .img,
-  .float {
+  .foto {
+    width: 80vw;
+    height: auto;
+  }
+  .float,
+  iframe {
     display: none;
   }
   .width {
     justify-content: center;
-    /* margin: 0 2vw 0 2vw ; */
-  }
-  .card {
-    margin: 1vh auto 1vh auto;
   }
 
   li {
@@ -147,16 +172,16 @@ iframe{
 }
 
 @media (max-width: 767.98px) {
-  .img,
-  .float {
+  .foto {
+    width: 80vw;
+    height: auto;
+  }
+  .float,
+  iframe {
     display: none;
   }
   .width {
     justify-content: center;
-    /* margin: 0 2vw 0 2vw ; */
-  }
-  .card {
-    margin: 1vh auto 1vh auto;
   }
 
   li {
@@ -192,16 +217,16 @@ iframe{
 }
 
 @media (max-width: 991.98px) {
-  .img,
-  .float {
+  .foto {
+    width: 80vw;
+    height: auto;
+  }
+  .float,
+  iframe {
     display: none;
   }
   .width {
     justify-content: center;
-    /* margin: 0 2vw 0 2vw ; */
-  }
-  .card {
-    margin: 1vh auto 1vh auto;
   }
 
   li {
@@ -217,5 +242,13 @@ iframe{
   }
   .navbar img {
     width: 10vw;
+  }
+}
+@media (min-width: 991px) and(max-width: 1199.98px) {
+  .width {
+    width: 90%;
+  }
+  li {
+    width: 90%;
   }
 }
