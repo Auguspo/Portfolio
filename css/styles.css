@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 body {
-  background-color: #1b1c1e;
-  
   background-color: #4c4c4c;
   opacity: 1;
-  background-image: radial-gradient(circle at center center, #303134, #4c4c4c), repeating-radial-gradient(circle at center center, #303134, #303134, 25px, transparent 50px, transparent 25px);
-  background-blend-mode: multiply;}
+  background-image: radial-gradient(circle at center center, #303134, #4c4c4c),
+    repeating-radial-gradient(
+      circle at center center,
+      #303134,
+      #303134,
+      25px,
+      transparent 50px,
+      transparent 25px
+    );
+  background-blend-mode: multiply;
+}
 
 h1 {
   font-family: Montserrat, sans-serif;
@@ -74,12 +81,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8vh;
-
+  margin-bottom: 5vh;
 }
 
 header {
   height: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .float {
@@ -112,27 +119,30 @@ header {
 }
 
 .txt p {
-  margin-bottom: 5vh;
-  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+
 }
+.txt img {
+  margin-bottom: 5vh;
+}
+.txt{margin: auto;}
 
 .card {
-  justify-content: center;
-  margin: auto;
-  margin-top: 3vh;
+  margin: 2vh 2vw 0 2vw;
+  background-color: #303034 !important;
 }
 
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-  background: #fff;
   box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  margin-top: 10px;
+  z-index: 100;
 }
 
 iframe {
@@ -143,18 +153,19 @@ iframe {
 }
 
 .divider {
+  padding-top: 3vh;
   background-color: #303030;
-  margin-top: 1vh;
- 
-  
 }
 
-
-.row p,ul{
-  margin-bottom: 5vh;
-  
+.row p,
+ul {
+  margin-bottom: 8vh;
 }
 
+.row {
+  margin-right: auto;
+  margin-left: auto;
+}
 
 @media (max-width: 575.98px) {
   .foto {
@@ -167,10 +178,10 @@ iframe {
   }
   .width {
     justify-content: center;
+    margin-bottom: 0;
   }
 
   li {
-    margin: auto;
     width: 80%;
   }
 
@@ -199,7 +210,6 @@ iframe {
     margin: auto;
     width: 80%;
   }
-
 
   p {
     width: 90%;
@@ -243,7 +253,6 @@ iframe {
     width: 80%;
   }
 
-  
   p {
     width: 90%;
   }
