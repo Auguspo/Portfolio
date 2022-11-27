@@ -65,6 +65,7 @@ li {
 
 ul {
   text-align: justify;
+
   justify-content: center;
   display: inline;
 }
@@ -99,7 +100,8 @@ header {
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #99bl9;
+  z-index: 100;
 }
 
 .my-float {
@@ -121,12 +123,14 @@ header {
 .txt p {
   margin-top: 5vh;
   margin-bottom: 7vh;
-
+  margin-left: 5vw;
 }
 .txt img {
   margin-bottom: 5vh;
 }
-.txt{margin: auto;}
+.txt {
+  margin: auto;
+}
 
 .card {
   margin: 2vh 2vw 0 2vw;
@@ -142,7 +146,7 @@ header {
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  z-index: 100;
+  z-index: 99;
 }
 
 iframe {
@@ -166,6 +170,32 @@ ul {
   margin-right: auto;
   margin-left: auto;
 }
+
+.round {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  font-size: 45px;
+  text-align: center;
+  margin:auto;
+}
+
+.round:hover .fa-arrow-right{
+  opacity: 0;
+}
+
+.fa-github{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-97%, 20%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.round:hover .fa-github{
+  opacity: 1;
+}
+
 
 @media (max-width: 575.98px) {
   .foto {
@@ -266,5 +296,9 @@ ul {
   }
   li {
     width: 90%;
+  }
+
+  p {
+    margin-left: 5vw;
   }
 }
