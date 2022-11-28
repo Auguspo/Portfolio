@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Augusto Poletti">
@@ -30,8 +30,10 @@
     <!-- CSS only -->
 
     <!-- bootstrap -->
-
+    <link rel="stylesheet" href="./css/lang.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+   
+    
 
     <title>Augusto Poletti</title>
 
@@ -42,9 +44,12 @@
     />
   </head>
   <body>
+
+    
     <!--navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <img class="h-auto" src="./assets/img/icon.png" />
+      
       <button
         class="navbar-toggler"
         type="button"
@@ -56,28 +61,41 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html"
+        <div class="navbar-nav col-lg-10">
+          <a id="home" class="nav-item nav-link active" href="index.html"
             >Home <span class="sr-only">(current)</span></a
           >
-          <a class="nav-item nav-link active" href="./index.html#grid"
+          <a id="projA" class="nav-item nav-link active" href="./index.html#grid"
             >Projects</a
           >
-          <a class="nav-item nav-link active" href="./index.html#about"
+          <a id="aboutA" class="nav-item nav-link active" href="./index.html#about"
             >About me</a
           >
-          <a class="nav-item nav-link" href="./contact.html">Contact me</a>
+          <a id="contact" class="nav-item nav-link" href="./contact.html">Contact me</a>
+
+        </div> 
+        <div class="langWrap col-lg-2">
+          <a id="SP" class="lang" language='spanish' >
+            <i class="flag flag-argentina"></i></a>
+          <a id="EN" class="lang active" language='english'><i class="flag flag-united-states"></i></a>
+        
         </div>
-      </div>
+        </div>
+       
+
+       
+             </div>
+           
     </nav>
     <!--navbar -->
 
     <!--header -->
     <header id="top" class="width">
       <div class="txt">
-        <h1>Web designer</h1>
-        <p>
+        <h1 class="title">Web designer</h1>
+        <p  class="description">
           Welcome to my portfolio, here you can follow my projects and my social networks.
         </p>
         <img class="foto mx-auto" src="./assets/img/foto.png" alt="error" />
@@ -89,7 +107,7 @@
     <section class="divider">
 
     <!-- GRID PROYECTOS -->
-    <h2>These are some of my projects.</h2>
+    <h2 id="grid" class="projT">These are some of my projects.</h2>
     <div class="card-group ">
 
 
@@ -98,7 +116,7 @@
         alt="HackerRank">
         <div class="card-body">
           <h4 class="card-title text-light">HackerRank</h4>
-          <p class="card-text">A web page created to show daily javascript exercises and certifications.</p>
+          <p class="card-text hackerP">A web page created to show daily javascript exercises and certifications.</p>
           <a target="_blank" href="https://auguspo.github.io/HackerRank-3-months/" class="btn btn-primary">Go there</a>
         </div>
 
@@ -110,7 +128,7 @@
       />
         <div class="card-body">
           <h4 class="card-title text-light">BiblioWeb</h4>
-          <p class="card-text">A website created using bootstrap as a deliverable for the final TIC's project. </p>
+          <p class="card-text biblioP">A website created using bootstrap as a deliverable for the final TIC's project. </p>
           <a href="https://auguspo.github.io/BiblioWeb/index.html"
           target="_blank" class="btn btn-primary">Go somewhere</a>
         </div>
@@ -129,16 +147,15 @@
       </div>
 
      <div class="txt" style="padding-right:2vw;">
-
-        <button class=" round btn-primary"
-        target="_blank"
-        href="https://github.com/Auguspo"
+      <form action="https://github.com/Auguspo" method="get" target="_blank">       
+     
+        <button type="submit" class="round btn-primary"              
         role="button"
         data-mdb-ripple-color="dark"
         ><i class="fa-solid fa-arrow-right"></i>
         
-        <i class="fab fa-github"></i
-      ></button>
+        <i class="fab fa-github gitu"></i
+      ></button></form>
 
     </div>
 
@@ -151,9 +168,9 @@
     <!-- GRID PROYECTOS -->
 
     <!-- Knowledge -->
-    <div id="about" class="width row">
-      <h2>About me</h2>
-      <p>
+    <div  class="width row">
+      <h2 id="aboutT">About me</h2>
+      <p id="aboutP">
         I am an electronic engineering student, the pandemic awakened a great interest in programming, starting with HTML/CSS and moving on to React JS but soon I will continue to develop and internalize myself in the Back End like Node JS and JAVA.      </p>
     </div>
   </div>
@@ -164,9 +181,9 @@
 
     <!-- Courses and certification -->
     <div class="row width">
-      <h2>Courses and certification</h2>
+      <h2 id="courseT">Courses and certification</h2>
 
-      <p>
+      <p id="courseP">
         These are some of my certifications and courses in progress, both in electronic engineering and programming.
       </p>
 
@@ -211,7 +228,7 @@
         <section class=" col-12">
           <!-- Facebook -->
           <a
-            class="btn-link  btn-lg text-light m-2 col-3"
+            class="btn btn-outline-light btn-floating m-2 col-3"
             target="_blank"
             href="https://www.facebook.com/augus2poletti"
             role="button"
@@ -221,7 +238,7 @@
 
           <!-- Instagram -->
           <a
-            class="btn-link  btn-lg text-light m-2  col-3"
+            class="btn btn-outline-light btn-floating m-2  col-3"
             target="_blank"
             href="https://www.instagram.com/auguspoletti/"
             role="button"
@@ -231,7 +248,7 @@
 
           <!-- Linkedin -->
           <a
-            class="btn-link  btn-lg text-light m-2  col-3"
+            class="btn btn-outline-light btn-floating m-2  col-3"
             target="_blank"
             href="https://www.linkedin.com/in/augusto-poletti/"
             role="button"
@@ -240,7 +257,7 @@
           ></a>
           <!-- Github -->
           <a
-            class=" btn-lg text-light m-2  col-3"
+            class="btn btn-outline-light btn-floating  m-2  col-3"
             target="_blank"
             href="https://github.com/Auguspo"
             role="button"
@@ -266,5 +283,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script src="js/lang.js"></script>
+   
+      </body>
 </html>

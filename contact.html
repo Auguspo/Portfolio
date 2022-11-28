@@ -16,13 +16,19 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./css/lang.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
 
     <title>Augusto Poletti</title>
 
@@ -36,6 +42,7 @@
     <!--navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <img class="h-auto" src="./assets/img/icon.png" />
+      
       <button
         class="navbar-toggler"
         type="button"
@@ -47,15 +54,33 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" href="./index.html#grid">Projects</a>
-          <a class="nav-item nav-link active" href="./index.html#about">About me</a>
-          <a class="nav-item nav-link " href="./contact.html">Contact me</a>
+        <div class="navbar-nav col-lg-10">
+          <a id="home" class="nav-item nav-link active" href="index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a id="projA" class="nav-item nav-link active" href="./index.html#grid"
+            >Projects</a
+          >
+          <a id="aboutA" class="nav-item nav-link active" href="./index.html#about"
+            >About me</a
+          >
+          <a id="contact" class="nav-item nav-link" href="./contact.html">Contact me</a>
+
+        </div> 
+        <div class="langWrap col-lg-2">
+          <a id="SP" class="lang" language='spanish' >
+            <i class="flag flag-argentina"></i></a>
+          <a id="EN" class="lang active" language='english'><i class="flag flag-united-states"></i></a>
+        
         </div>
         </div>
-      </div>
+       
+
+       
+             </div>
+           
     </nav>
     <!--navbar -->
 
@@ -68,7 +93,7 @@
               <div class="row justify-content-center">
                 <div class="col-lg-6">
                   <div class="contact-wrap">
-                    <h3 class="mb-4 text-center">Contact me!</h3>
+                    <h3 id="contactH" class="mb-4 text-center">Contact me!</h3>
                     <div
                       id="form-message-warning"
                       class="mb-4 w-100 text-center"
@@ -128,11 +153,12 @@
                         <div class="col-md-12">
                           <div class="form-group">
                             <input
+                            id="submit"
                               type="submit"
                               value="Send Message"
                               class="btn btn-primary"
                             />
-                            <div class="submitting"></div>
+                            
                             
                           </div>
                         </div>
@@ -217,5 +243,8 @@
       <!-- Copyright -->
     </footer>
     <!-- footer -->
+
+
+    <script src="js/lang.js"></script>
   </body>
 </html>

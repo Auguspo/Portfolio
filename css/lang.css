@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.langWrap {
+  justify-content: right;
+  display: flex;
+  padding-left: 0px;
+}
+
+.lang {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 5px;
+  font-weight: bold;
+  background: #555656;
+  font-size: 18px;
+  border: 2px solid;
+}
+
+.flag-argentina {
+  padding-left: 30%;
+}
+.flag-united-states {
+  padding-right: 30%;
+}
+
+#SP {
+  border-top-left-radius: 60%;
+  border-bottom-left-radius: 60%;
+}
+#EN {
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 60%;
+}
+.lang.active {
+  background: #fad505;
+}
+.content {
+  margin-top: 20px;
+  font-size: 20px;
+}
