@@ -184,7 +184,7 @@ ul {
   opacity: 0;
 }
 
-.fa-github{
+.gitu{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -192,11 +192,15 @@ ul {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-.round:hover .fa-github{
+.round:hover .gitu{
   opacity: 1;
 }
 
-
+.btn{width: auto;
+}
+i{
+  padding-top: 1px;
+}
 @media (max-width: 575.98px) {
   .foto {
     width: 80vw;
