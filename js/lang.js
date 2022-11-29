@@ -23,6 +23,7 @@ link.forEach((el) => {
     const attr = el.getAttribute("language")
 
     homeEL.textContent = data[attr].home
+  
     proj2EL.textContent = data[attr].projA
     about3EL.textContent = data[attr].aboutA
 
@@ -57,7 +58,7 @@ var data = {
     biblioP:
       "Web creada usando boostrap a pedido de un projecto final de TICs.",
     aboutT: "Sobre mi",
-    aboutp:
+    aboutP:
       "Soy un estudiante de ingeniería electrónica, la pandemia despertó un gran interés por la programación, empezando por HTML/CSS y pasando por React JS pero pronto seguiré desarrollando e interiorizándome en el Back End como Node JS y JAVA.",
     aboutA: "Sobre mi",
     courseT: "Cursos y certificaciones",
