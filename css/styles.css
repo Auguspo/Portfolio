@@ -123,7 +123,7 @@ header {
 .txt p {
   margin-top: 5vh;
   margin-bottom: 7vh;
-  margin-left: 5vw;
+
 }
 .txt img {
   margin-bottom: 5vh;
@@ -221,10 +221,13 @@ i{
 
   p {
     width: 90%;
+    
   }
   .navbar img {
     width: 10vw;
   }
+
+  .txt p{margin-left: 5vw;}
 }
 
 @media (max-width: 767.98px) {
@@ -267,6 +270,7 @@ i{
   .navbar img {
     width: 10vw;
   }
+  .txt p{margin-left: 5vw;}
 }
 
 @media (max-width: 991.98px) {
@@ -292,7 +296,9 @@ i{
   }
   .navbar img {
     width: 10vw;
+    
   }
+  .txt p{margin-left: 5vw;}
 }
 @media (min-width: 991px) and(max-width: 1199.98px) {
   .width {
@@ -305,4 +311,5 @@ i{
   p {
     margin-left: 5vw;
   }
+  .txt p{margin-left: 5vw;}
 }
