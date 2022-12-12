@@ -8,12 +8,14 @@ const descrEl = document.querySelector(".description")
 const projEL = document.querySelector(".projT")
 const proj2EL = document.getElementById("projA")
 const hackEL = document.querySelector(".hackerP")
+const skillEL = document.querySelector(".skillP")
 const biblioEL = document.querySelector(".biblioP")
 const aboutEL = document.getElementById("aboutT")
 const about2EL = document.getElementById("aboutP")
 const about3EL = document.getElementById("aboutA")
 const courseEL = document.getElementById("courseT")
 const course2EL = document.getElementById("courseP")
+
 
 link.forEach((el) => {
   el.addEventListener("click", () => {
@@ -34,6 +36,7 @@ link.forEach((el) => {
     projEL.textContent = data[attr].projT
     proj2EL.textContent = data[attr].projA
     hackEL.textContent = data[attr].hackP
+    skillEL.textContent = data[attr].skillP
     biblioEL.textContent = data[attr].biblioP
     aboutEL.textContent = data[attr].aboutT
     about2EL.textContent = data[attr].aboutP
@@ -55,6 +58,7 @@ var data = {
     projA: "Projectos",
     hackP:
       "Web creada para mostrar el avance diario en ejercicios de JS y las certificaciones.",
+      skillP:"Primer proyecto creado para tester fetch, AJAX y comprender los forms.",
     biblioP:
       "Web creada usando boostrap a pedido de un projecto final de TICs.",
     aboutT: "Sobre mi",
@@ -75,6 +79,7 @@ var data = {
     projA: "Projects",
     hackP:
       "A web page created to show daily javascript exercises and certifications.",
+      skillP:"First Project to test APIs calls, Using fetch and AJAX, also testing forms.",
     biblioP:
       "A website created using bootstrap as a deliverable for the final TIC's project.",
     aboutT: "About me",

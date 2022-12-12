@@ -167,6 +167,8 @@ ul {
 .row {
   margin-right: auto;
   margin-left: auto;
+  justify-content: center;
+  
 }
 
 .round {
@@ -202,9 +204,17 @@ i {
 }
 
 .backC {
+  justify-content: center;
   background: rgba(59, 59, 59, 0.658);
   border-radius: 10px;
-  align-items: center;
+  text-align: justify;
+width: 80%;
+}
+
+.botonC{
+  margin:auto;
+  
+  margin-bottom:10px
 }
 
 @media (max-width: 575.98px) {
